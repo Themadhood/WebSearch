@@ -4,20 +4,19 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='TPC_Error',
+    name='TPC_WebSearch',
     version="1.0.0",#__version__,
 
-    url='https://github.com/Themadhood/Error',
+    url='https://github.com/Themadhood/WebSearch',
     author='Themadhood Pequot',
     author_email='themadhoodpequot@gmail.com',
 
     packages=find_packages(),
-    #py_modules=['Error'],
 
     install_requires=[
-        "gspread",#manipulates google sheets
-        "oauth2client",#logs in to google
-        "google-api-python-client",],
+        "google",#alows google search
+        "requests",#web reader
+        "beautifulsoup4",],
 
     classifiers=[
         'Intended Audience :: Developers',
